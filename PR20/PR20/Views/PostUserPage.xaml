@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR20.Views.PostUserPage"
+             Title="POST-запрос">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Имя"/>
+            <Editor x:Name="eName" Placeholder="Введите имя пользователя" />
+            <Label Text="Работа"/>
+            <Editor x:Name="eJob" Placeholder="Введите работу пользователя" />
+            <Button Text="Создать" Clicked="POSTuser" />
+            <Label x:Name="lResult" Text=""/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR20.Views.MainPage"
+             Title="Выберите действие">
+    <ContentPage.Content>
+        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+            <Button VerticalOptions="Center" Text="Получить пользователя (GET)" Clicked="GoToGET"/>
+            <Button VerticalOptions="Center" Text="Создать пользователя (POST)" Clicked="GoToPOST"/>
+            <Button VerticalOptions="Center" Text="Изменить пользователя (PUT)" Clicked="GoToPUT"/>
+            <Button VerticalOptions="Center" Text="Удалить пользователя (DELETE)" Clicked="GoToDELETE"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

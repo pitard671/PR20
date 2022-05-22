@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR20.Views.PutUserPage"
+             Title="PUT-запрос">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ID пользователя, данные которого вы хотите изменить"/>
+            <Editor x:Name="eID" Placeholder="Введите ID пользователя" />
+            
+            <Label Text="Новое имя"/>
+            <Editor x:Name="eName" Placeholder="Введите имя пользователя" />
+            <Label Text="Новая работа"/>
+            <Editor x:Name="eJob" Placeholder="Введите работу пользователя" />
+            <Button Text="Изменить" Clicked="PUTuser" />
+            <Label x:Name="lResult" Text=""/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
